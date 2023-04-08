@@ -2,7 +2,7 @@
 
 # Author: 👤 **Joshua Omolewa**
 
-## PROJECT OVERVIEW : Built a real-time streaming pipeline that extracts  real time stock data from a stock API in oreder to built dashboards that monitor the stocks in real time. The stock data from API is ingested into Apache Nifi and then stored in  a MYSQL databases and then debezium is used to capture the changes in the database (CDC) that is published into a kafka topic  in Amazon MSK using debezium Mysql connector. The stock data in the kafka topic is transform using spark streaming and then loaded into Glue database. Athena is used to query the glue database to create realtime dashboard using PowerBI and Tableau. Airflow is used to orchestrate the real time streaming ETL pipeline.a
+## PROJECT OVERVIEW : Built a real-time streaming pipeline that extracts  real time stock data from a stock API in oreder to built dashboards that monitor the stocks in real time. The stock data from API is ingested into Apache Nifi and then stored in  a MYSQL databases and then debezium is used to capture the changes in the database (CDC) that is published into a kafka topic  in Amazon MSK using debezium Mysql connector. The stock data in the kafka topic is transform using spark streaming and then loaded into Glue database. Athena is used to query the glue database to create realtime dashboard using PowerBI and Tableau. Airflow is used to orchestrate the real time streaming ETL pipeline.
 
 ##  Project Architecture
 
