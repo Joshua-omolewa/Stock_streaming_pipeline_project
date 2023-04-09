@@ -1,0 +1,1190 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.22.1117.1841                               -->
+<workbook original-version='18.1' source-build='2022.4.0 (20224.22.1117.1841)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='stock_16779988822150' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='josh_stram_db' inline='true' name='federated.1i76i1v0s3ydeb16fbqkg0x2l3fv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='athena.us-east-1.amazonaws.com' name='athena.0e8cy761v5lczs0zy8mh21mnp2nu'>
+            <connection class='athena' dbname='AwsDataCatalog' one-time-sql='' port='443' schema='josh_stram_db' server='athena.us-east-1.amazonaws.com' username='AKIA3QQSRGFHFFO6LN6V' warehouse='s3://streaming-project/transformed-data/' workgroup-auth-mode='as-is'>
+              <connection-customization class='athena' enabled='false' version='18.1'>
+                <vendor name='athena' />
+                <driver name='athena' />
+                <customizations>
+                  <customization name='CAP_AUTH_DB_IMPERSONATE' value='no' />
+                  <customization name='CAP_AUTH_KERBEROS_IMPERSONATE' value='no' />
+                  <customization name='CAP_COLLECT_TABLE_STATISTICS' value='no' />
+                  <customization name='CAP_CONNECT_STORED_PROCEDURE' value='no' />
+                  <customization name='CAP_CREATE_TEMP_TABLES' value='no' />
+                  <customization name='CAP_DATASERVER_MAGIC_NUMBER' value='no' />
+                  <customization name='CAP_DEFERS_CONNECTION_VERIFICATION' value='no' />
+                  <customization name='CAP_DISABLE_EXTRACT_TABLE_INDEXING' value='no' />
+                  <customization name='CAP_EQUALITY_JOINS_ONLY' value='no' />
+                  <customization name='CAP_EQUIJOINS_ONLY' value='no' />
+                  <customization name='CAP_FAST_METADATA' value='yes' />
+                  <customization name='CAP_FORCE_COUNT_FOR_NUMBEROFRECORDS' value='no' />
+                  <customization name='CAP_GREENPLUM_TRUST_METADATA_CONTAINSNULL' value='no' />
+                  <customization name='CAP_HIVE_FIX_METADATA_NAMES' value='no' />
+                  <customization name='CAP_INDEX_TEMP_TABLES' value='no' />
+                  <customization name='CAP_INSERT_TEMP_EXEC_STORED_PROCEDURE' value='no' />
+                  <customization name='CAP_JDBC_QUERY_USE_PREPARE_PARAMETER_MARKER' value='no' />
+                  <customization name='CAP_LOCAL_ALIASES_CASE_INSENSITIVE' value='no' />
+                  <customization name='CAP_ODBC_ALWAYS_THROW_CONNECT_ERRORS' value='no' />
+                  <customization name='CAP_ODBC_BIND_FORCE_DATETIME_AS_CHAR' value='no' />
+                  <customization name='CAP_ODBC_BIND_FORCE_DATE_AS_CHAR' value='no' />
+                  <customization name='CAP_ODBC_BIND_FORCE_MAX_STRING_BUFFERS' value='no' />
+                  <customization name='CAP_ODBC_BIND_FORCE_MEDIUM_STRING_BUFFERS' value='no' />
+                  <customization name='CAP_ODBC_BIND_FORCE_SIGNED' value='no' />
+                  <customization name='CAP_ODBC_BIND_FORCE_SMALL_STRING_BUFFERS' value='no' />
+                  <customization name='CAP_ODBC_BIND_SUPPRESS_INT64' value='no' />
+                  <customization name='CAP_ODBC_BIND_SUPPRESS_PREFERRED_TYPES' value='no' />
+                  <customization name='CAP_ODBC_BIND_SUPPRESS_WIDE_CHAR' value='no' />
+                  <customization name='CAP_ODBC_CURSOR_DYNAMIC' value='no' />
+                  <customization name='CAP_ODBC_CURSOR_FORWARD_ONLY' value='no' />
+                  <customization name='CAP_ODBC_CURSOR_KEYSET_DRIVEN' value='no' />
+                  <customization name='CAP_ODBC_CURSOR_STATIC' value='no' />
+                  <customization name='CAP_ODBC_DRIVER_HIVE_ASSUME_LATEST' value='no' />
+                  <customization name='CAP_ODBC_ERROR_IGNORE_FALSE_ALARM' value='no' />
+                  <customization name='CAP_ODBC_FETCH_BUFFERS_RESIZABLE' value='no' />
+                  <customization name='CAP_ODBC_FETCH_BUFFERS_SIZE_MASSIVE' value='no' />
+                  <customization name='CAP_ODBC_FETCH_CONTINUE_ON_ERROR' value='no' />
+                  <customization name='CAP_ODBC_FORCE_SINGLE_ROW_BINDING' value='no' />
+                  <customization name='CAP_ODBC_METADATA_STRING_LENGTH_UNKNOWN' value='no' />
+                  <customization name='CAP_ODBC_METADATA_SUPPRESS_SQLCOLUMNS_API' value='no' />
+                  <customization name='CAP_ODBC_METADATA_SUPPRESS_SQLFOREIGNKEYS_API' value='no' />
+                  <customization name='CAP_ODBC_METADATA_SUPPRESS_SQLPRIMARYKEYS_API' value='no' />
+                  <customization name='CAP_ODBC_METADATA_SUPPRESS_SQLSTATISTICS_API' value='no' />
+                  <customization name='CAP_ODBC_QUERY_USE_PREPARE_PARAMETER_MARKER' value='no' />
+                  <customization name='CAP_ODBC_REBIND_SKIP_UNBIND' value='no' />
+                  <customization name='CAP_ODBC_TRIM_VARCHAR_PADDING' value='no' />
+                  <customization name='CAP_ODBC_UNBIND_AUTO' value='no' />
+                  <customization name='CAP_ODBC_UNBIND_BATCH' value='no' />
+                  <customization name='CAP_ODBC_UNBIND_EACH' value='no' />
+                  <customization name='CAP_ODBC_USE_NATIVE_PROTOCOL' value='no' />
+                  <customization name='CAP_PADDED_SEMANTICS_NCHAR_NVARCHAR' value='no' />
+                  <customization name='CAP_PERSIST_SQL_RELATION_ON_LEAF_CONNECTION' value='no' />
+                  <customization name='CAP_QUERY_ALLOW_JOIN_REORDER' value='yes' />
+                  <customization name='CAP_QUERY_ALLOW_PARTIAL_AGGREGATION' value='yes' />
+                  <customization name='CAP_QUERY_ALWAYS_USE_AQ_CACHE' value='no' />
+                  <customization name='CAP_QUERY_AVOID_EXPRESSION_INLINING' value='no' />
+                  <customization name='CAP_QUERY_BLENDING_ALWAYS_USE_LOCAL_MAPPING_TABLES' value='no' />
+                  <customization name='CAP_QUERY_BLENDING_PREFER_LOCAL_MAPPING_TABLES' value='yes' />
+                  <customization name='CAP_QUERY_BLENDING_REMOTE_MAPPING_TABLES' value='yes' />
+                  <customization name='CAP_QUERY_BOOLEXPR_TO_INTEXPR' value='no' />
+                  <customization name='CAP_QUERY_BOOL_IDENTIFIER_TO_LOGICAL' value='no' />
+                  <customization name='CAP_QUERY_CAST_MONEY_AS_NUMERIC' value='no' />
+                  <customization name='CAP_QUERY_EMPTY_DOMAIN_TOP' value='no' />
+                  <customization name='CAP_QUERY_FORCE_AGGREGATE_MEASURES' value='no' />
+                  <customization name='CAP_QUERY_GROUP_BY_ALIAS' value='no' />
+                  <customization name='CAP_QUERY_GROUP_BY_DEGREE' value='no' />
+                  <customization name='CAP_QUERY_HAVING_REQUIRES_GROUP_BY' value='no' />
+                  <customization name='CAP_QUERY_HAVING_UNSUPPORTED' value='no' />
+                  <customization name='CAP_QUERY_IGNORE_HINT_CHECK_NOT_NULL' value='no' />
+                  <customization name='CAP_QUERY_IGNORE_HINT_MAKE_DOMAIN_PREDICATE' value='no' />
+                  <customization name='CAP_QUERY_JOIN_ACROSS_SCHEMAS' value='yes' />
+                  <customization name='CAP_QUERY_JOIN_ASSUME_CONSTRAINED' value='no' />
+                  <customization name='CAP_QUERY_JOIN_PUSH_DOWN_CONDITION_EXPRESSIONS' value='no' />
+                  <customization name='CAP_QUERY_JOIN_REQUIRES_SCOPE' value='no' />
+                  <customization name='CAP_QUERY_JOIN_REQUIRES_SUBQUERY' value='no' />
+                  <customization name='CAP_QUERY_MINMAX_FORCE_GROUPBYS' value='no' />
+                  <customization name='CAP_QUERY_NULL_REQUIRES_CAST' value='no' />
+                  <customization name='CAP_QUERY_OUTER_JOIN_CONDITION_NO_TRIVIAL' value='no' />
+                  <customization name='CAP_QUERY_RECOMPILE_FAILED_QUERY' value='no' />
+                  <customization name='CAP_QUERY_SELECT_ALIASES_SORTED' value='no' />
+                  <customization name='CAP_QUERY_SORT_BY' value='yes' />
+                  <customization name='CAP_QUERY_SORT_BY_DEGREE' value='yes' />
+                  <customization name='CAP_QUERY_SUBQUERIES' value='yes' />
+                  <customization name='CAP_QUERY_SUBQUERIES_WITH_TOP' value='yes' />
+                  <customization name='CAP_QUERY_SUBQUERIES_WITH_TOP_ALTERNATIVE' value='no' />
+                  <customization name='CAP_QUERY_SUBQUERY_QUERY_CONTEXT' value='yes' />
+                  <customization name='CAP_QUERY_SUPPORTS_LODJOINS' value='yes' />
+                  <customization name='CAP_QUERY_SUPPORT_ANALYTIC_FUNCTIONS' value='no' />
+                  <customization name='CAP_QUERY_SUPPORT_EMPTY_GROUPBY' value='no' />
+                  <customization name='CAP_QUERY_SUPPRESS_CHECK_DOMAIN_LITERALS_THRESHOLD' value='no' />
+                  <customization name='CAP_QUERY_SUPPRESS_NULL_CHECK_QUERIES' value='no' />
+                  <customization name='CAP_QUERY_TAGS_IN_SQL_TEXT' value='no' />
+                  <customization name='CAP_QUERY_TIME_REQUIRES_CAST' value='no' />
+                  <customization name='CAP_QUERY_TOPSTYLE_LIMIT' value='no' />
+                  <customization name='CAP_QUERY_TOPSTYLE_ROWNUM' value='no' />
+                  <customization name='CAP_QUERY_TOPSTYLE_TOP' value='no' />
+                  <customization name='CAP_QUERY_TOP_0_METADATA' value='yes' />
+                  <customization name='CAP_QUERY_TOP_N' value='yes' />
+                  <customization name='CAP_QUERY_USE_DOMAIN_EXCEPT_OPTIMIZATION' value='yes' />
+                  <customization name='CAP_QUERY_USE_DOMAIN_RANGES_OPTIMIZATION' value='yes' />
+                  <customization name='CAP_QUERY_USE_DOMAIN_RANGES_OPTIMIZATION_STRINGS' value='no' />
+                  <customization name='CAP_QUERY_USE_QUERY_FUSION' value='yes' />
+                  <customization name='CAP_QUERY_WHERE_FALSE_METADATA' value='no' />
+                  <customization name='CAP_RELDATEFILT_CASTTODATE' value='no' />
+                  <customization name='CAP_RENAME_TABLE_USE_LEAF_CONNECTION_DIALECT' value='no' />
+                  <customization name='CAP_SELECT_INTO' value='no' />
+                  <customization name='CAP_SELECT_TOP_INTO' value='no' />
+                  <customization name='CAP_STORED_PROCEDURE_PREFER_TEMP_TABLE' value='no' />
+                  <customization name='CAP_STORED_PROCEDURE_REPAIR_TEMP_TABLE_STRINGS' value='no' />
+                  <customization name='CAP_STORED_PROCEDURE_TEMP_TABLE_FROM_BUFFER' value='no' />
+                  <customization name='CAP_STORED_PROCEDURE_TEMP_TABLE_FROM_NEW_PROTOCOL' value='no' />
+                  <customization name='CAP_SUPPRESS_CONNECTION_POOLING' value='no' />
+                  <customization name='CAP_SUPPRESS_DISCOVERY_QUERIES' value='no' />
+                  <customization name='CAP_SUPPRESS_ENUMERATE_SCHEMAS_VIA_SQL' value='no' />
+                  <customization name='CAP_SUPPRESS_ENUMERATE_TABLES_VIA_SQL' value='no' />
+                  <customization name='CAP_SUPPRESS_GET_SERVER_TIME' value='yes' />
+                  <customization name='CAP_SUPPRESS_QUICK_FILTER_ACCELERATION_VIEWS' value='no' />
+                  <customization name='CAP_SUPPRESS_TEMP_TABLE_CHECKS' value='no' />
+                </customizations>
+              </connection-customization>
+            </connection>
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='athena.0e8cy761v5lczs0zy8mh21mnp2nu' name='stock' table='[josh_stram_db].[stock]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='athena.0e8cy761v5lczs0zy8mh21mnp2nu' name='stock' table='[josh_stram_db].[stock]' type='table' />
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>_hoodie_commit_time</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[_hoodie_commit_time]</local-name>
+            <parent-name>[stock]</parent-name>
+            <remote-alias>_hoodie_commit_time</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_547C030E70944B1E8A8AF25FF927B16E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_hoodie_commit_seqno</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[_hoodie_commit_seqno]</local-name>
+            <parent-name>[stock]</parent-name>
+            <remote-alias>_hoodie_commit_seqno</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_547C030E70944B1E8A8AF25FF927B16E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_hoodie_record_key</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[_hoodie_record_key]</local-name>
+            <parent-name>[stock]</parent-name>
+            <remote-alias>_hoodie_record_key</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_547C030E70944B1E8A8AF25FF927B16E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_hoodie_partition_path</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[_hoodie_partition_path]</local-name>
+            <parent-name>[stock]</parent-name>
+            <remote-alias>_hoodie_partition_path</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_547C030E70944B1E8A8AF25FF927B16E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_hoodie_file_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[_hoodie_file_name]</local-name>
+            <parent-name>[stock]</parent-name>
+            <remote-alias>_hoodie_file_name</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_547C030E70944B1E8A8AF25FF927B16E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>close</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[close]</local-name>
+            <parent-name>[stock]</parent-name>
+            <remote-alias>close</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_547C030E70944B1E8A8AF25FF927B16E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>event_time</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[event_time]</local-name>
+            <parent-name>[stock]</parent-name>
+            <remote-alias>event_time</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_547C030E70944B1E8A8AF25FF927B16E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>high</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[high]</local-name>
+            <parent-name>[stock]</parent-name>
+            <remote-alias>high</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_547C030E70944B1E8A8AF25FF927B16E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>low</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[low]</local-name>
+            <parent-name>[stock]</parent-name>
+            <remote-alias>low</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_547C030E70944B1E8A8AF25FF927B16E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>open</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[open]</local-name>
+            <parent-name>[stock]</parent-name>
+            <remote-alias>open</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_547C030E70944B1E8A8AF25FF927B16E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>record_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[record_id]</local-name>
+            <parent-name>[stock]</parent-name>
+            <remote-alias>record_id</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_547C030E70944B1E8A8AF25FF927B16E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>time</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[time]</local-name>
+            <parent-name>[stock]</parent-name>
+            <remote-alias>time</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_547C030E70944B1E8A8AF25FF927B16E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>volume</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[volume]</local-name>
+            <parent-name>[stock]</parent-name>
+            <remote-alias>volume</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_547C030E70944B1E8A8AF25FF927B16E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>symbol</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[symbol]</local-name>
+            <parent-name>[stock]</parent-name>
+            <remote-alias>symbol</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_547C030E70944B1E8A8AF25FF927B16E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Spread High/low' datatype='real' name='[Calculation_1554586362370371586]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='sum([high])-sum([low])' />
+      </column>
+      <column caption='Spread Open/close' datatype='real' name='[Calculation_1554586362370600963]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='sum([close])-sum([open])' />
+      </column>
+      <column caption='new High/low (copy)' datatype='real' name='[Spread High/low (copy)_1554586362376953860]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='sum([high])-sum([low])' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='stock' datatype='table' name='[__tableau_internal_object_id__].[stock_547C030E70944B1E8A8AF25FF927B16E]' role='measure' type='quantitative' />
+      <column caption='Close' datatype='real' name='[close]' role='measure' type='quantitative' />
+      <column caption='High' datatype='real' name='[high]' role='measure' type='quantitative' />
+      <column caption='Low' datatype='real' name='[low]' role='measure' type='quantitative' />
+      <column caption='Open' datatype='real' name='[open]' role='measure' type='quantitative' />
+      <column caption='Symbol' datatype='string' name='[symbol]' role='dimension' type='nominal' />
+      <column caption='Time' datatype='datetime' name='[time]' role='dimension' type='ordinal' />
+      <column-instance column='[close]' derivation='Avg' name='[avg:close:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[high]' derivation='Avg' name='[avg:high:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[low]' derivation='Avg' name='[avg:low:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[open]' derivation='Avg' name='[avg:open:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[close]' derivation='Sum' name='[sum:close:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[high]' derivation='Sum' name='[sum:high:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[low]' derivation='Sum' name='[sum:low:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[open]' derivation='Sum' name='[sum:open:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/omole/OneDrive/Documents/My Tableau Repository/Datasources/josh_stram_db.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/05/2023 06:47:27 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='josh_stram_db' increment-value='%null%' refresh-type='create' rows-inserted='340' timestamp-start='2023-03-05 06:47:22.671' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>_hoodie_commit_time</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[_hoodie_commit_time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>_hoodie_commit_time</remote-alias>
+              <ordinal>0</ordinal>
+              <family>stock</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>109</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_547C030E70944B1E8A8AF25FF927B16E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>_hoodie_commit_seqno</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[_hoodie_commit_seqno]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>_hoodie_commit_seqno</remote-alias>
+              <ordinal>1</ordinal>
+              <family>stock</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>340</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_547C030E70944B1E8A8AF25FF927B16E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>_hoodie_record_key</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[_hoodie_record_key]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>_hoodie_record_key</remote-alias>
+              <ordinal>2</ordinal>
+              <family>stock</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>340</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_547C030E70944B1E8A8AF25FF927B16E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>_hoodie_partition_path</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[_hoodie_partition_path]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>_hoodie_partition_path</remote-alias>
+              <ordinal>3</ordinal>
+              <family>stock</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_547C030E70944B1E8A8AF25FF927B16E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>_hoodie_file_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[_hoodie_file_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>_hoodie_file_name</remote-alias>
+              <ordinal>4</ordinal>
+              <family>stock</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_547C030E70944B1E8A8AF25FF927B16E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>close</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[close]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>close</remote-alias>
+              <ordinal>5</ordinal>
+              <family>stock</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>239</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_547C030E70944B1E8A8AF25FF927B16E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>event_time</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[event_time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>event_time</remote-alias>
+              <ordinal>6</ordinal>
+              <family>stock</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>180</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_547C030E70944B1E8A8AF25FF927B16E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>high</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[high]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>high</remote-alias>
+              <ordinal>7</ordinal>
+              <family>stock</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>214</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_547C030E70944B1E8A8AF25FF927B16E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>low</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[low]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>low</remote-alias>
+              <ordinal>8</ordinal>
+              <family>stock</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>230</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_547C030E70944B1E8A8AF25FF927B16E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>open</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[open]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>open</remote-alias>
+              <ordinal>9</ordinal>
+              <family>stock</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>229</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_547C030E70944B1E8A8AF25FF927B16E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>record_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[record_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>record_id</remote-alias>
+              <ordinal>10</ordinal>
+              <family>stock</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>340</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_547C030E70944B1E8A8AF25FF927B16E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>time</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>time</remote-alias>
+              <ordinal>11</ordinal>
+              <family>stock</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>327</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_547C030E70944B1E8A8AF25FF927B16E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>volume</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[volume]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>volume</remote-alias>
+              <ordinal>12</ordinal>
+              <family>stock</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>336</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_547C030E70944B1E8A8AF25FF927B16E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>symbol</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[symbol]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>symbol</remote-alias>
+              <ordinal>13</ordinal>
+              <family>stock</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_547C030E70944B1E8A8AF25FF927B16E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[avg:open:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[avg:low:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[sum:low:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[sum:open:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[avg:high:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[sum:high:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[avg:close:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[sum:close:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='stock' id='stock_547C030E70944B1E8A8AF25FF927B16E'>
+            <properties context=''>
+              <relation connection='athena.0e8cy761v5lczs0zy8mh21mnp2nu' name='stock' table='[josh_stram_db].[stock]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='AAPLE-1MIN CANDLE STICK CHART'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='josh_stram_db' name='federated.1i76i1v0s3ydeb16fbqkg0x2l3fv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1i76i1v0s3ydeb16fbqkg0x2l3fv'>
+            <column caption='Spread Open/close' datatype='real' name='[Calculation_1554586362370600963]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum([close])-sum([open])' />
+            </column>
+            <column caption='new High/low (copy)' datatype='real' name='[Spread High/low (copy)_1554586362376953860]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum([high])-sum([low])' />
+            </column>
+            <column-instance column='[low]' derivation='Avg' name='[avg:low:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[open]' derivation='Avg' name='[avg:open:qk]' pivot='key' type='quantitative' />
+            <column caption='Close' datatype='real' name='[close]' role='measure' type='quantitative' />
+            <column caption='High' datatype='real' name='[high]' role='measure' type='quantitative' />
+            <column caption='Low' datatype='real' name='[low]' role='measure' type='quantitative' />
+            <column-instance column='[symbol]' derivation='None' name='[none:symbol:nk]' pivot='key' type='nominal' />
+            <column-instance column='[time]' derivation='None' name='[none:time:ok]' pivot='key' type='ordinal' />
+            <column caption='Open' datatype='real' name='[open]' role='measure' type='quantitative' />
+            <column-instance column='[low]' derivation='Sum' name='[sum:low:qk]' pivot='key' type='quantitative' />
+            <column caption='Symbol' datatype='string' name='[symbol]' role='dimension' type='nominal' />
+            <column caption='Time' datatype='datetime' name='[time]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1554586362370600963]' derivation='User' name='[usr:Calculation_1554586362370600963:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Spread High/low (copy)_1554586362376953860]' derivation='User' name='[usr:Spread High/low (copy)_1554586362376953860:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[none:symbol:nk]'>
+            <groupfilter function='member' level='[none:symbol:nk]' member='&quot;AAPL&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[none:symbol:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='render-fold-reversed' value='true' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[avg:open:qk]' field-type='quantitative' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[avg:open:qk]' scope='rows' value='Open' />
+            <encoding attr='space' class='0' field='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[avg:low:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[avg:low:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[avg:open:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[none:time:ok]' value='129' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[none:time:ok]' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[none:time:ok]' value='#e6e6e6' />
+            <format attr='text-orientation' field='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[none:time:ok]' value='-90' />
+            <format attr='display' field='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[none:time:ok]' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' center='0.0' field='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[usr:Calculation_1554586362370600963:qk]' num-steps='2' palette='red_green_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='11' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='GanttBar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.0099999997764825821' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='12' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[avg:open:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='GanttBar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[usr:Calculation_1554586362370600963:qk]' />
+              <size column='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[usr:Calculation_1554586362370600963:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.3843094110488892' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='13' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[avg:low:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='GanttBar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <size column='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[usr:Spread High/low (copy)_1554586362376953860:qk]' />
+              <lod column='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[sum:low:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.0099999997764825821' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[avg:open:qk] + [federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[avg:low:qk])</rows>
+        <cols>[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[none:time:ok]</cols>
+      </table>
+      <simple-id uuid='{FF3CC265-E48D-48EC-A5B7-3F8FF7C74243}' />
+    </worksheet>
+    <worksheet name='AMAZON-1MIN CANDLE STICK CHART'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='josh_stram_db' name='federated.1i76i1v0s3ydeb16fbqkg0x2l3fv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1i76i1v0s3ydeb16fbqkg0x2l3fv'>
+            <column caption='Spread Open/close' datatype='real' name='[Calculation_1554586362370600963]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum([close])-sum([open])' />
+            </column>
+            <column caption='new High/low (copy)' datatype='real' name='[Spread High/low (copy)_1554586362376953860]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum([high])-sum([low])' />
+            </column>
+            <column-instance column='[low]' derivation='Avg' name='[avg:low:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[open]' derivation='Avg' name='[avg:open:qk]' pivot='key' type='quantitative' />
+            <column caption='Close' datatype='real' name='[close]' role='measure' type='quantitative' />
+            <column caption='High' datatype='real' name='[high]' role='measure' type='quantitative' />
+            <column caption='Low' datatype='real' name='[low]' role='measure' type='quantitative' />
+            <column-instance column='[symbol]' derivation='None' name='[none:symbol:nk]' pivot='key' type='nominal' />
+            <column-instance column='[time]' derivation='None' name='[none:time:ok]' pivot='key' type='ordinal' />
+            <column caption='Open' datatype='real' name='[open]' role='measure' type='quantitative' />
+            <column caption='Symbol' datatype='string' name='[symbol]' role='dimension' type='nominal' />
+            <column caption='Time' datatype='datetime' name='[time]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1554586362370600963]' derivation='User' name='[usr:Calculation_1554586362370600963:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Spread High/low (copy)_1554586362376953860]' derivation='User' name='[usr:Spread High/low (copy)_1554586362376953860:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[none:symbol:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:symbol:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:symbol:nk]' member='&quot;AAPL&quot;' />
+                <groupfilter function='member' level='[none:symbol:nk]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[none:symbol:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[avg:low:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[avg:low:qk]' scope='rows' value='false' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[avg:open:qk]' field-type='quantitative' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[avg:open:qk]' scope='rows' value='Open' />
+            <format attr='render-fold-reversed' value='true' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+            <format attr='display' class='0' field='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[avg:open:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[none:time:ok]' value='113' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[none:time:ok]' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[none:time:ok]' value='#e6e6e6' />
+            <format attr='text-orientation' field='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[none:time:ok]' value='-90' />
+            <format attr='display' field='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[none:time:ok]' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' center='0.0' field='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[usr:Calculation_1554586362370600963:qk]' num-steps='2' palette='red_green_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='11' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='GanttBar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.0099999997764825821' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='12' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[avg:open:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='GanttBar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[usr:Calculation_1554586362370600963:qk]' />
+              <size column='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[usr:Calculation_1554586362370600963:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.3843094110488892' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='13' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[avg:low:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='GanttBar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <size column='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[usr:Spread High/low (copy)_1554586362376953860:qk]' />
+              <lod column='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[avg:low:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.0099999997764825821' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[avg:open:qk] + [federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[avg:low:qk])</rows>
+        <cols>[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[none:time:ok]</cols>
+      </table>
+      <simple-id uuid='{A024F87B-1CD0-4078-A5B3-D27E505D182C}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='94643' id='12' param='horz' type-v2='layout-flow' w='99064' x='468' y='4464'>
+            <zone h='94643' id='10' type-v2='layout-basic' w='99064' x='468' y='4464'>
+              <zone h='47316' id='8' param='horz' type-v2='layout-flow' w='99064' x='468' y='4464'>
+                <zone h='47316' id='3' type-v2='layout-basic' w='99064' x='468' y='4464'>
+                  <zone h='47316' id='6' name='AAPLE-1MIN CANDLE STICK CHART' w='99064' x='468' y='4464'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='47327' id='9' name='AMAZON-1MIN CANDLE STICK CHART' w='99064' x='468' y='51780'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone forceUpdate='true' h='3571' id='62' type-v2='text' w='99064' x='468' y='893'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='15'>Created by Joshua Omolewa</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='66' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98214' id='65' param='vert' type-v2='layout-flow' w='99064' x='468' y='893'>
+                <zone forceUpdate='true' h='3571' id='62' type-v2='text' w='99064' x='468' y='893'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='15'>Created by Joshua Omolewa</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47316' id='6' is-fixed='true' name='AAPLE-1MIN CANDLE STICK CHART' w='99064' x='468' y='4464'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47327' id='9' is-fixed='true' name='AMAZON-1MIN CANDLE STICK CHART' w='99064' x='468' y='51780'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{6D904B3C-39D4-41B5-BBBC-1EF2D47C0813}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='AMAZON-1MIN CANDLE STICK CHART'>
+      <cards>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='12' param='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[usr:Calculation_1554586362370600963:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='marks' />
+            <card type='filters' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{570131A7-F509-4DE4-85D8-F43BFCE4E534}' />
+    </window>
+    <window class='worksheet' name='AAPLE-1MIN CANDLE STICK CHART'>
+      <cards>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='12' param='[federated.1i76i1v0s3ydeb16fbqkg0x2l3fv].[usr:Calculation_1554586362370600963:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3AE339FC-F8E0-43CB-B5EE-8B4C0C531692}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='AAPLE-1MIN CANDLE STICK CHART'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='AMAZON-1MIN CANDLE STICK CHART'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='6' />
+      <simple-id uuid='{860CD46B-2A2C-482B-B2A1-D982FFAE8290}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      4dr/AwJwKJ+sdk9FAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
