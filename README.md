@@ -6,31 +6,13 @@
 
 ##  Project Architecture
 
-![project architecture](https://github.com/Joshua-omolewa/end-2-end_data_pipeline_project/blob/main/img/Data%20Architecture.jpg)
+![project architecture](https://github.com/Joshua-omolewa/Stock_streaming_pipeline_project/blob/main/img/Project%20Architecture.jpg)
 
 ## 1. Business Scenario
-A Retail Store requires a Data engineer to build a data pipeline (ETL) that take raw data from organization database and transforms the data to satisfy the business buisness  requirements and  provide a platform for Data Analyst to generate Visualization to answer some business questions.
+A Bank requires a data Engineer to build a streaming pipeline that tracks stocks and provide a dashboard that tracks the changes in stock price in real time
 
-## 2. Business Requirements
-The data engineer is require to produce a weekly table that meets the following requirements for Data Analyst can perform analytics:
 
-The table will be grouped by each week, each store, each product to calculate the following metrics: (**I transalated the business requirement to mini SQL statement I will need during transformation process using Spark**)
-
-* total sales quantity of a product : **Sum(sales_qty)**
-* total sales amount of a product : **Sum(sales_amt)**
-* average sales Price: **Sum(sales_amt)/Sum(sales_qty)**
-* stock level by then end of the week : **stock_on_hand_qty by the end of the week (only the stock level at the end day of the week)**
-* store on Order level by then end of the week: **ordered_stock_qty by the end of the week (only the ordered stock quantity at the end day of the week)**
-* total cost of the week: **Sum(cost_amt)**
-* the percentage of Store In-Stock: **(how many times of out_of_stock in a week) / days of a week (7 days)**
-* total Low Stock Impact: **sum (out_of+stock_flg + Low_Stock_flg)**
-* potential Low Stock Impact: **if Low_Stock_Flg =TRUE then SUM(sales_amt - stock_on_hand_amt)**
-* no Stock Impact: **if out_of_stock_flg=true, then sum(sales_amt)**
-* low Stock Instances: **Calculate how many times of Low_Stock_Flg in a week**
-* no Stock Instances: **Calculate then how many times of out_of_Stock_Flg in a week**
-* how many weeks the on hand stock can supply: **(stock_on_hand_qty at the end of the week) / sum(sales_qty)**
-
-## 3. STEPS USED TO COMPLETE THE PROJECT 
+## 2 STEPS USED TO COMPLETE THE PROJECT 
 
 ### Please note: Python language & SQL are used to build the pyspark script that utilizes SparkSQL API for transforming the raw data to meet the business requirement using the Amazon EMR cluster. 
 
