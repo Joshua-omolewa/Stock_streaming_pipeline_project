@@ -3,9 +3,9 @@ import random
 from random import *
 import boto3
 import requests
-import lamda_function2 as del_sparkjob
+import lamda_function2 as del_sparkjob  #importing the second lambda function used for deleting spark jobs
 
-#implementing curl command using lambbda
+#implementing this curl command below using lambda
 
 """
 curl -X POST -H "Content-Type: application/json" -d '{
@@ -27,7 +27,11 @@ curl -X POST -H "Content-Type: application/json" -d '{
 
 
 def lambda_handler(event, context):
-    # Define the request parameters
+    """
+    This lambda function submits the spark job using Livy.
+    It sends a post request to livy endpoint
+    """
+    # Defining request parameters need
     endpoint_url = "http://ec2-50-17-26-47.compute-1.amazonaws.com:8998/batches"
     headers = {"Content-Type": "application/json"}
     data = {

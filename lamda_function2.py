@@ -2,6 +2,9 @@ import requests
 import json
 
 def del_all_livy_batches(livy_endpoint):
+    """
+    This function deletes all spark job runining in the EMR cluster
+    """
     batches_endpoint = f"{livy_endpoint}/batches"
     
     try:
