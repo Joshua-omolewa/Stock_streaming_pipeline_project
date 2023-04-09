@@ -1,5 +1,6 @@
 #Created by Joshua Omolewa
 
+#importing required libraries
 from pyspark.sql import SparkSession
 from pyspark.sql.types import *
 from pyspark.sql.functions import *
@@ -104,7 +105,7 @@ if __name__ == "__main__":
 
 
 
-#  Writing stream to start hoodie upsert
+#  Writing stream to start hudi file format upsert into s3
     transform_df.writeStream.option("checkpointLocation", checkpoint_location) \
         .queryName("josh stock") \
         .foreachBatch(write_batch) \
