@@ -1,0 +1,6 @@
+# The historical real time stocks Data where extracted from Alpha vantage stock API using this query below
+
+https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY_EXTENDED&symbol=AAPL&interval=1min&slice=year1month1&apikey=<insert your API key>
+
+
+https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY_EXTENDED&symbol=AMZN&interval=1min&slice=year1month1&apikey=<insert your API key>

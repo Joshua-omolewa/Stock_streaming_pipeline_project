@@ -9,14 +9,14 @@
 ![project architecture](https://github.com/Joshua-omolewa/Stock_streaming_pipeline_project/blob/main/img/Project%20Architecture.jpg)
 
 ## 1. Business Scenario
-A Bank requires a data Engineer to build a streaming pipeline that tracks stocks and provide a dashboard that tracks the changes in stock price in real time
+A Bank requires a data Engineer to build a streaming pipeline that tracks stocks in real time and develop a dashboard that tracks the changes in stock price in near real time
 
 
 ## 2 STEPS USED TO COMPLETE THE PROJECT 
 
-### Please note: Python language & SQL are used to build the pyspark script that utilizes SparkSQL API for transforming the raw data to meet the business requirement using the Amazon EMR cluster. 
+### Please note:The realtime stock streaming pipeline was built using  Python language. The pyspark script utilizes spark streaming and HUDI for transforming the stock data in the Amazon EMR cluster. 
 
-* Created a database with schema in Snowflake and then I loaded the **[raw data](https://drive.google.com/drive/folders/1TL3mtDTW4Uv59cyp3C9COgVgGMaBEImB?usp=sharing)** into Snowflake database in order to setup the Snowflake OLTP system 
+* Built a stock API using FASTAPI framework that track Amazon and Apple stock gotten from Aplha vantage stock API  a database with schema in Snowflake and then I loaded the **[raw data](https://drive.google.com/drive/folders/1TL3mtDTW4Uv59cyp3C9COgVgGMaBEImB?usp=sharing)** into Snowflake database in order to setup the Snowflake OLTP system 
 <img src="https://github.com/Joshua-omolewa/end-2-end_data_pipeline_project/blob/main/img/snowfalke%20final.jpg"  width="100%" height="100%">
 
 * Wrote an SQL [stored procedure](https://github.com/Joshua-omolewa/end-2-end_data_pipeline_project/blob/main/snowflake_loading_data_to_s3%20-final.sql) that would intiate the extraction of the raw data into the staging s3 bucket (i.e. input s3 bucket) every day at 12:00 MST which is the off peak period for the retail store. Snowflakes allows creation of task that utilizes chron to run any query. I create a a task that run the store procedure to load the data for each day to the input s3 bucket at  12:00 am MST everyday. This process create a batch load of raw data at the end of each day to be moved into the staging s3 bucket
