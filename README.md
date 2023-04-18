@@ -26,8 +26,8 @@ A Bank requires a data Engineer to build a streaming pipeline that tracks stocks
 * Created docker containers running Airflow using docker compost  within an EC2 (Amazon Elastic Compute Cloud) instance. The stock API trigger airflow as soon as stock data is being ingested by Apache Nifi. Airflow is used to trigger lambda function which send a post request to submit the spark job to the Amazon EMR cluster using post request sent to Livy. Airflow monitor the spark job through Livy to ensure the spark job did not fail in the EMR cluster. The airflow python code for the airflow dags can be found **[here](https://github.com/Joshua-omolewa/Stock_streaming_pipeline_project/blob/main/aiflowlambda.py)** 
 <img src="https://github.com/Joshua-omolewa/Stock_streaming_pipeline_project/blob/main/img/Ariflow.jpg"  width="100%" height="100%"> 
 
-* I also created a lambda function that submit the spark job to the EMR cluster through livy once triggered by airflow. Livy is a rest interface that help in interacting with the spark cluster. The EMR cluster was created with livy pre installed 
-<img src="https://github.com/Joshua-omolewa/Stock_streaming_pipeline_project/blob/main/img/Ariflow.jpg"  width="100%" height="100%"> 
+* I also created a lambda function that submit the spark job to the EMR cluster through livy once triggered by airflow. Livy is a rest interface that help in interacting with the spark cluster. The EMR cluster was created with livy pre installed . The spark streaming python code can be found here **[here](https://github.com/Joshua-omolewa/Stock_streaming_pipeline_project/blob/main/aiflowlambda.py)** 
+<img src="https://github.com/Joshua-omolewa/Stock_streaming_pipeline_project/blob/main/img/Livy%20%2C%20EMR%2C%20Lambda%20function.jpg"  width="100%" height="100%"> 
 
 * Finally I created a docker container that runs superset in an EC2 instance. Superset can be used to create Data Visualization  & dashboards  by the Data Analyst. <img src="https://github.com/Joshua-omolewa/end-2-end_data_pipeline_project/blob/main/img/Superset%20finals.jpg"  width="100%" height="100%">
 
