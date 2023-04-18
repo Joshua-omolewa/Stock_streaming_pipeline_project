@@ -55,11 +55,11 @@ if __name__ == "__main__":
     
     spark = SparkSession.builder.getOrCreate()
 
-    # NOTE: we cant load the schema file from the local machine anymore, so we have to pull it from s3
+    # NOTE: A sample payload from the kafka topic is stored in s3 so we deserialize the data 
     #.schema is to extract the schema from the json sample payload
     schema = spark.read.json('s3://streaming-project/schema/stock.json').schema 
 
-    # We have to connect to the bootstrap servers, instead of kafka:9092
+    # We have to connect to the bootstrap servers
     df = spark \
     .readStream \
     .format("kafka") \
