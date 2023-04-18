@@ -85,7 +85,7 @@ def check_batch_status(**context):
 
 #TASKS TO BE EXECUTED BY AIRFLOW
 
-#TASK 1 : invoke lamda function in AWS
+#TASK 1 : invoke lambda function in AWS
 
 invoke_lambda = PythonOperator(
     task_id='invoke_lambda',
@@ -103,5 +103,5 @@ check_batch = PythonOperator(
     dag=dag,
 )
 
-#SETTING THE DEPENDECIES ( This instruct aiflow  on the task depencies)
+#SETTING THE DEPENDECIES ( This instruct aiflow  on the task dependencies)
 invoke_lambda >> check_batch
