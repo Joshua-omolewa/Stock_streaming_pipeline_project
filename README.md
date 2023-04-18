@@ -23,7 +23,8 @@ A Bank requires a data Engineer to build a streaming pipeline that tracks stocks
 <img src="https://github.com/Joshua-omolewa/Stock_streaming_pipeline_project/blob/main/img/Docker%2C%20MYSQL%2C%20Apache%20Nifi%2C%20Kafka.jpg"  width="100%" height="100%"> 
 <img src="https://github.com/Joshua-omolewa/Stock_streaming_pipeline_project/blob/main/img/Apache%20Nifi%20Architecture.jpg"  width="100%" height="100%"> 
 
-* Created docker containers runing Airflow using docker compost  within an EC2 (Amazon Elastic Compute Cloud) instance. The stock API trigger airflow as soon as stock data is being ingested by Apache nifi. Airflow is used to trigger lamda function which send a post request to submit the spark job  to the Amazon EMR cluster using post request sent to Livy  .orchestrate & schedule the the movement of data from S3 to the Amazon EMR cluster for transformation. Airflow submits also monitor the spark job through Livy to ensure the spark job did not fail. The airflow python code for the airflow dags can be found 
+* Created docker containers runing Airflow using docker compost  within an EC2 (Amazon Elastic Compute Cloud) instance. The stock API trigger airflow as soon as stock data is being ingested by Apache Nifi. Airflow is used to trigger lamb
+da function which send a post request to submit the spark job  to the Amazon EMR cluster using post request sent to Livy  .orchestrate & schedule the the movement of data from S3 to the Amazon EMR cluster for transformation. Airflow submits also monitor the spark job through Livy to ensure the spark job did not fail. The airflow python code for the airflow dags can be found 
 
 
 
