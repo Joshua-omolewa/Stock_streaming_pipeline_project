@@ -34,6 +34,8 @@ curl -i -X POST -H "Accept:application/json" -H "Content-Type:application/json" 
 <img src="https://github.com/Joshua-omolewa/Stock_streaming_pipeline_project/blob/main/img/Livy%20%2C%20EMR%2C%20Lambda%20function.jpg"  width="100%" height="100%"> 
 
 * I created Amazon Managed Streaming for Apache Kafka (MSK) in which the kafka topic are created by debezium. The stock stream data is sent from the debezium MySQL connector to the kafka topic and also the spark streaming job ingest data from the kafka topic for stream processing. The transformed data from the spark streaming job is loaded into the S3 in hudi format. 
+
+
 * I created Amazon Managed Streaming for Apache Kafka (MSK) in which the kafka topic are created by debezium. The stock stream data is sent from the debezium MySQL connector to the kafka topic and also the spark streaming job ingest data from the kafka topic for stream processing. 
 
 * Finally I created a docker container that runs superset in an EC2 instance. Superset can be used to create Data Visualization  & dashboards  by the Data Analyst. <img src="https://github.com/Joshua-omolewa/end-2-end_data_pipeline_project/blob/main/img/Superset%20finals.jpg"  width="100%" height="100%">
