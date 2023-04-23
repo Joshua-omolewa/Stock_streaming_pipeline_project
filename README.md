@@ -43,7 +43,7 @@ curl -i -X POST -H "Accept:application/json" -H "Content-Type:application/json" 
 <img src="https://github.com/Joshua-omolewa/Stock_streaming_pipeline_project/blob/main/img/Great%20expectation%20data%20doc%20website.jpg"  width="100%" height="100%">
 
 
-* Finally I created near real time stock candle stick dashboard to track the Amazon and Apple stock  using PowerBI and Tableau. The candle stick dashboard extract data from the athena stock table. Live tableau dashboard can be seen **[here (Click here to see the public tableau dashboard)](https://public.tableau.com/app/profile/joshua5804/viz/stock_16779988822150/Dashboard1?publish=yes)** . <img src="https://github.com/Joshua-omolewa/end-2-end_data_pipeline_project/blob/main/img/Superset%20finals.jpg"  width="100%" height="100%">
+* Finally I created near real time stock candle stick dashboard to track the Amazon and Apple stock  using PowerBI and Tableau. The candle stick dashboard extract data from the athena stock table. Live tableau dashboard can be seen **[here (Click here to see the public tableau dashboard)](https://public.tableau.com/app/profile/joshua5804/viz/stock_16779988822150/Dashboard1?publish=yes)** . <img src="https://github.com/Joshua-omolewa/Stock_streaming_pipeline_project/blob/main/img/PowerBI%20%26%20Tableau%20dashboard.jpg"  width="100%" height="100%">
 
 # Follow Me On
   
