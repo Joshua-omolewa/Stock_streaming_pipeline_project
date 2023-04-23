@@ -40,6 +40,7 @@ curl -i -X POST -H "Accept:application/json" -H "Content-Type:application/json" 
 
 
 * I performed data quality check using great expectation on the final transformed stock data to ensure there is no deviation in the stock data expected. I checked for presence of null vlaues, checked some columns are present, I checked the table is not empty and validated the data type for the time column. Also I configured the generation of a slack notification when performing the data quality check. <img src="https://github.com/Joshua-omolewa/Stock_streaming_pipeline_project/blob/main/img/Data%20quality%20check%20.jpg"  width="100%" height="100%">
+<img src="https://github.com/Joshua-omolewa/Stock_streaming_pipeline_project/blob/main/img/Great%20expectation%20data%20doc%20website.jpg"  width="100%" height="100%">
 
 
 
