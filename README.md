@@ -36,7 +36,8 @@ curl -i -X POST -H "Accept:application/json" -H "Content-Type:application/json" 
 * I created Amazon Managed Streaming for Apache Kafka (MSK) in which the kafka topic are created by debezium. The stock stream data is sent from the debezium MySQL connector to the kafka topic and also the spark streaming job ingest data from the kafka topic for stream processing. The transformed data from the spark streaming job is loaded into the S3 in hudi format.  <img src="https://github.com/Joshua-omolewa/Stock_streaming_pipeline_project/blob/main/img/S3%20transformed%20data%20%26%20MSk.jpg"  width="100%" height="100%">
 
 
-* I created a database called stock in glue which contains the table created from the hudi upsert by reading the data from S3 automatically. The tables from in the glue database can be read by athena automatically.
+* I created a database called stock in glue which contains the table created from the hudi upsert when the spark streaming job is running in the EMR cluster. Glue read the stock data from thr tranformed s3 bucket automatically. The stock table in the glue database can be read by athena automatically. <img src="https://github.com/Joshua-omolewa/Stock_streaming_pipeline_project/blob/main/img/S3%20transformed%20data%20%26%20MSk.jpg"  width="100%" height="100%">
+
 
 
 
