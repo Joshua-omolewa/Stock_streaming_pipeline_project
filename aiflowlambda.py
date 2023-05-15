@@ -24,7 +24,7 @@ dag = DAG(
     'invoke_lambda_and_check_batch_status', #name of dag/dag id
     default_args=default_args,
     description='Invoke AWS Lambda function and check Livy batch status',
-    schedule_interval=None #defining shedule interval for task, None is situable for manually triggered job via Aireflow REST API
+    schedule_interval=None #defining shedule interval for task, None is situable for manually triggered job via Airflow REST API
 )
 
 def invoke_lambda_function(**context):
